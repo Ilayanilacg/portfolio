@@ -1,4 +1,4 @@
-/* Reset and basics */
+/* Reset & Basics */
 * {
   margin: 0;
   padding: 0;
@@ -9,7 +9,7 @@
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
-  background: #f8f7f1; /* Albescent white */
+  background: #fefdf8; /* Albescent white */
   color: #4b3832; /* Old vine */
 }
 
@@ -19,7 +19,7 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
-  background: #d8a39d; /* Heather rose */
+  background: #e7c2c0; /* Heather rose */
   color: #4b3832;
   display: flex;
   justify-content: space-between;
@@ -53,7 +53,7 @@ nav ul li a:hover {
 /* Header */
 header {
   height: 100vh;
-  background: linear-gradient(rgba(248,247,241,0.8), rgba(248,247,241,0.8)),
+  background: linear-gradient(rgba(254,253,248,0.85), rgba(254,253,248,0.85)),
               url('https://images.unsplash.com/photo-1581091012184-799f4fa3ef18?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1600') center/cover no-repeat;
   color: #4b3832;
   display: flex;
@@ -62,7 +62,6 @@ header {
   align-items: center;
   text-align: center;
   padding: 0 20px;
-  animation: fadeIn 1.5s ease-in;
 }
 header h2 {
   font-size: 3em;
@@ -112,7 +111,7 @@ section {
   gap: 20px;
 }
 .card {
-  background: #fff2e8; /* Parchment */
+  background: #fdf2e4; /* Parchment */
   padding: 20px;
   border-radius: 15px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -130,7 +129,7 @@ section {
 
 /* Experience & Education Cards */
 .experience-card, .education-card {
-  background: #fff2e8;
+  background: #fdf2e4;
   padding: 20px;
   border-radius: 15px;
   margin-bottom: 20px;
@@ -166,7 +165,7 @@ section {
 footer {
   text-align: center;
   padding: 20px;
-  background: #d8a39d;
+  background: #e7c2c0;
   color: #4b3832;
   margin-top: 40px;
 }
