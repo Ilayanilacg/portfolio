@@ -63,7 +63,7 @@ header {
   align-items: center;
   text-align: center;
   padding: 0 20px;
-  animation: fadeIn 2s ease-in;
+  animation: fadeIn 1.5s ease-in;
 }
 header h2 {
   font-size: 3em;
@@ -73,7 +73,7 @@ header h2 {
 header p {
   font-size: 1.2em;
   max-width: 600px;
-  animation: fadeIn 2.5s ease-in;
+  animation: fadeIn 2s ease-in;
 }
 
 /* Sections */
@@ -81,8 +81,9 @@ section {
   padding: 80px 20px;
   max-width: 1100px;
   margin: auto;
-  opacity: 0;
-  transform: translateY(30px);
+  opacity: 1; /* sections visible immediately */
+  transform: translateY(0);
+  animation: fadeUp 1s ease-in;
 }
 .about-content {
   display:flex;
@@ -155,4 +156,8 @@ footer {
 @keyframes slideDown {
   from { transform: translateY(-50px); opacity: 0; }
   to { transform: translateY(0); opacity: 1; }
+}
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
