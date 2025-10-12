@@ -1,2 +1,13 @@
-// All sections are visible with animations
-console.log("Ilayanila Portfolio loaded successfully!");
+// Smooth section fade-in animations
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    }
+  });
+});
+
+document.querySelectorAll('section').forEach(section => {
+  section.classList.add('hidden');
+  observer.observe(section);
+});
