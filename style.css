@@ -150,4 +150,15 @@ footer {
     padding: 10px;
     border-radius: 8px;
   }
+  .hidden {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+  
 }
