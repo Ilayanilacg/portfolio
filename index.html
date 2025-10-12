@@ -1,157 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ilayanila Portfolio | Full Stack Web Developer</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ilayanila Gopinath | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
 </head>
 <body>
-
-  <!-- Navbar -->
-  <nav>
-    <h1>Ilayanila Portfolio</h1>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-
-  <!-- Header -->
   <header>
-    <h2>Hi, I'm Ilayanila C.G</h2>
-    <p>Full Stack Web Developer | ERP & Cloud Solutions | Innovator in Digital Applications</p>
-    <div class="header-contact">
-      <span>📧 ilayanilacg2001@gmail.com</span>
-      <span>📞 +974 3027 4496</span>
-    </div>
+    <nav class="navbar">
+      <div class="logo">Ilayanila Gopinath</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <!-- About -->
-  <section id="about">
-    <h2>About Me</h2>
-    <div class="about-content">
-      <img src="https://images.unsplash.com/photo-1593642532973-d31b6557fa68?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=400" alt="Developer">
-      <p>
-        I am a passionate Full Stack Web Developer with expertise in building responsive, scalable, and user-friendly applications.
-        Skilled in front-end and back-end development, ERP integrations, and mobile app development. I enjoy turning complex problems into elegant digital solutions.
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Associate Development Engineer</h1>
+      <p class="subtitle">
+        Building scalable and user-friendly applications that blend technology with innovation.
       </p>
+      <a href="#contact" class="btn">Contact Me</a>
     </div>
   </section>
 
-  <!-- Skills -->
-  <section id="skills">
-    <h2>Skills</h2>
-    <div class="grid">
-      <div class="card"><h3>Front-End</h3><p>HTML5, CSS3, JavaScript, React, Bootstrap</p></div>
-      <div class="card"><h3>Back-End</h3><p>Node.js, Python, Java, PHP</p></div>
-      <div class="card"><h3>Databases & ERP</h3><p>MySQL, MongoDB, Oracle ERP</p></div>
-      <div class="card"><h3>Workday & Integrations</h3><p>Workday Studio, EIB, Core Connector, Integrations</p></div>
-      <div class="card"><h3>Power Platform</h3><p>Power Apps, Power Automate, SharePoint</p></div>
-      <div class="card"><h3>Mobile & Web Dev</h3><p>Flutter, Android Applications, Website Development</p></div>
-      <div class="card"><h3>Tools & Cloud</h3><p>GitHub, Docker, Google Cloud</p></div>
-    </div>
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+      I’m <b>Ilayanila C.G</b>, a passionate Software Developer with hands-on experience in web development, Workday integrations, and cloud solutions.
+      I specialize in building scalable and user-friendly applications that blend technology with innovation.
+    </p>
+    <p>
+      With a background in Information Technology and professional experience in ERP, Workday, and application development, I thrive on solving real-world problems through clean code, modern design, and smart automation.
+    </p>
+    <p>
+      I’ve worked on diverse projects — from developing food ordering and POS systems using Flutter and .NET, to crafting SharePoint and Power Platform solutions that streamline business operations.
+    </p>
+    <p>
+      I’m a quick learner, creative thinker, and someone who loves exploring new technologies like AI, IoT, and Blockchain to stay ahead in the ever-evolving tech landscape.
+    </p>
   </section>
 
-  <!-- Experience -->
-  <section id="experience">
-    <h2>Experience</h2>
-
-    <div class="experience-card">
-      <h3>HRIT Workday Integration Developer</h3>
-      <span>Flextronics International LTD | Chennai, India | Sep 2023 - Dec 2024</span>
-      <ul>
-        <li>Developed and maintained Workday integrations using Workday Studio, EIB, and Core Connectors to support HR business processes.</li>
-        <li>Designed and deployed custom applications within Workday to automate workflows and enhance data accuracy.</li>
-        <li>Created inbound and outbound integrations with third-party systems (payroll, benefits, time tracking) ensuring smooth data exchange.</li>
-      </ul>
-    </div>
-
-    <div class="experience-card">
-      <h3>Power Platform Developer</h3>
-      <span>Flextronics International LTD | Chennai, India | Dec 2023 - Dec 2024</span>
-      <ul>
-        <li>Completed Power Platform Maker Certification.</li>
-        <li>Developed and deployed custom Power Apps forms integrated with SharePoint to streamline business processes.</li>
-        <li>Automated workflows using Power Automate, improving process efficiency and reducing approval times.</li>
-      </ul>
-    </div>
-
-    <div class="experience-card">
-      <h3>IT Security Analyst</h3>
-      <span>Flextronics International LTD | Chennai, India | Feb 2023 - Sep 2023</span>
-      <ul>
-        <li>Integrated security controls into API development, minimizing risks with encryption and firewalls.</li>
-        <li>Monitored and analyzed security alerts, identified potential threats, and safeguarded organizational data.</li>
-        <li>Conducted security assessments and vulnerability scans, collaborating on tailored security solutions.</li>
-      </ul>
-    </div>
-
-  </section>
-
-  <!-- Projects -->
-  <section id="projects">
+  <section id="projects" class="projects">
     <h2>Projects</h2>
-    <div class="grid">
-      <!-- Gas Leak Alert System -->
-      <div class="card">
-        <img src="https://via.placeholder.com/400x200?text=Gas+Leak+Alert+System" alt="Gas Leak Alert System">
+    <div class="project-grid">
+      <div class="project-card">
         <h3>Gas Leak Alert System</h3>
-        <p>Designed a system to detect and alert gas leaks.</p>
-        <p><strong>Technologies:</strong> IoT, C Coding, HTML, CSS, System Design, Framework</p>
+        <p>Designed a Gas leak alert system using IoT and AI to detect and alert gas leaks in real time.</p>
+        <p><b>Tech:</b> IoT, C, HTML, CSS, Frameworks</p>
       </div>
 
-      <!-- Motion Based Mouse -->
-      <div class="card">
-        <img src="https://via.placeholder.com/400x200?text=Motion+Based+Mouse" alt="Motion Based Mouse">
+      <div class="project-card">
         <h3>Motion Based Mouse</h3>
-        <p>Developed a motion-based mouse for disabled people.</p>
-        <p><strong>Technologies:</strong> AI, Python, DLIB, OpenCV, UI Designing</p>
+        <p>Developed motion-based mouse for disabled individuals using AI and Computer Vision.</p>
+        <p><b>Tech:</b> Python, OpenCV, DLIB, UI Design</p>
       </div>
 
-      <!-- Online Food Ordering Platform -->
-      <div class="card">
-        <img src="https://via.placeholder.com/400x200?text=Food+Ordering+Platform" alt="Online Food Ordering Platform">
-        <h3>Online Food Ordering Platform & Website</h3>
-        <p>Designed an online food ordering platform and website.</p>
-        <p><strong>Technologies:</strong> Python, HTML, CSS, JavaScript, MySQL, MongoDB, ASP.net</p>
+      <div class="project-card">
+        <h3>Online Food Ordering Platform</h3>
+        <p>Designed and developed an online food ordering platform and website.</p>
+        <p><b>Tech:</b> Python, HTML, CSS, JS, MySQL, MongoDB, ASP.NET</p>
+      </div>
+
+      <div class="project-card">
+        <h3>AI Chatbot for Customer Support</h3>
+        <p>Built an NLP-based chatbot to automate support queries, reducing manual effort by 60%.</p>
+        <p><b>Tech:</b> Python, NLTK, spaCy, Dialogflow</p>
       </div>
     </div>
   </section>
 
-  <!-- Education -->
-  <section id="education">
-    <h2>Education</h2>
-    <div class="education-card">
-      <h3>Loyola ICAM College of Engineering & Technology, Chennai</h3>
-      <p>B.Tech in Information Technology Engineering (CGPA: 8.48)</p>
-    </div>
-    <div class="education-card">
-      <h3>Marg Navajyothi Vidyalaya, Marg Swarnabhoomi</h3>
-      <p>HSC: 73% | SSLC: 92%</p>
+  <section id="experience" class="experience">
+    <h2>Work Experience</h2>
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <h3>Associate Engineer - Development</h3>
+        <h4>Flextronics International LTD | HRIT Workday Integration Developer</h4>
+        <span>Sep 2023 - Dec 2024 | Chennai, India</span>
+        <p>Developed and maintained Workday integrations using Workday Studio, EIBs, and Core Connectors.</p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>Power Platform Developer</h3>
+        <h4>Flextronics International LTD</h4>
+        <span>Dec 2023 - Dec 2024 | Chennai, India</span>
+        <p>Developed and deployed custom Power Apps integrated with SharePoint to streamline business processes.</p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>IT Security Analyst</h3>
+        <h4>Flextronics International</h4>
+        <span>Feb 2023 - Sep 2023 | Chennai, India</span>
+        <p>Implemented API security controls, monitored threats, and strengthened data protection frameworks.</p>
+      </div>
     </div>
   </section>
 
-  <!-- Contact -->
-  <section id="contact">
+  <section id="contact" class="contact">
     <h2>Contact</h2>
-    <div class="contact">
-      <a href="mailto:ilayanilacg2001@gmail.com">📧 Email</a>
-      <a href="tel:+97430274496">📞 Phone</a>
-      <a href="https://www.linkedin.com/in/ilayanilacg" target="_blank">🔗 LinkedIn</a>
-      <a href="https://github.com/ilayanilacg" target="_blank">💻 GitHub</a>
+    <p>Let’s connect and collaborate!</p>
+    <div class="contact-links">
+      <a href="mailto:ilayanilacg2001@gmail.com">📧 ilayanilacg2001@gmail.com</a>
+      <a href="https://www.linkedin.com/in/ilayanila-c-g" target="_blank">🔗 LinkedIn</a>
+      <a href="https://github.com/dashboard" target="_blank">💻 GitHub</a>
     </div>
   </section>
 
-  <!-- Footer -->
   <footer>
-    <p>© 2025 Ilayanila C.G | Full Stack Web Developer</p>
+    <p>© 2025 Ilayanila Gopinath. All rights reserved.</p>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
